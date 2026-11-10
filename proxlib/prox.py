@@ -2,7 +2,7 @@ import numpy as np
 
 #=====================================================================#
 
-def proxL1(v : np.darray, lam : float, conjugate : bool = False) -> np.darray:
+def proxL1(v : np.ndarray, lam : float, conjugate : bool = False) -> np.ndarray:
     '''
     Parameters:
         v (darray)
@@ -19,7 +19,7 @@ def proxL1(v : np.darray, lam : float, conjugate : bool = False) -> np.darray:
 
 #=====================================================================#
 
-def proxL21(V : np.darray, lam : float, conjugate : bool = False) -> np.darray:
+def proxL21(V : np.ndarray, lam : float, conjugate : bool = False) -> np.ndarray:
     '''
     Parameters:
         V (darray)
@@ -49,7 +49,7 @@ def proxL21(V : np.darray, lam : float, conjugate : bool = False) -> np.darray:
 
 #=====================================================================#
 
-def proxBox(v : np.darray, l : int, u : int, lam : float, conjugate : bool = False) -> np.darray:
+def proxBox(v : np.ndarray, l : int, u : int, lam : float, conjugate : bool = False) -> np.ndarray:
     '''
     Parameters:
         v (darray)
@@ -71,7 +71,7 @@ def proxBox(v : np.darray, l : int, u : int, lam : float, conjugate : bool = Fal
 
 #=====================================================================#
 
-def proxBall(v : np.darray, c : np.darray, r : int, lam : float, conjugate : bool = False) -> np.darray:
+def proxBall(v : np.ndarray, c : np.ndarray, r : int, lam : float, conjugate : bool = False) -> np.ndarray:
     '''
     Parameters:
         v (darray)
@@ -101,7 +101,7 @@ def proxBall(v : np.darray, c : np.darray, r : int, lam : float, conjugate : boo
     
 #=====================================================================#
 
-def proxProbSimplex(v : np.darray, lam : float = 1, conjugate : bool = False) -> np.darray:
+def proxProbSimplex(v : np.ndarray, lam : float = 1, conjugate : bool = False) -> np.ndarray:
     '''
     Parameters:
         v (darray)
